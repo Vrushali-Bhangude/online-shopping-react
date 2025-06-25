@@ -12,12 +12,8 @@
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-<<<<<<< HEAD
-    "react-router-dom": "^7.6.2",
-    "remixicon": "^4.6.0"
-=======
-    "react-router-dom": "^7.6.2"
->>>>>>> 2b6f5e6f6afc02233d0a3974ceac325169b783de
+
+"react-router-dom": "^6.22.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",

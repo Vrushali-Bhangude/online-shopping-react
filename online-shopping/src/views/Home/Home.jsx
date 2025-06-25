@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./Home.css";
 import main from "../../assets/home-page/main.png";
+import Nav from "../../components/Navbar/Nav"
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ useEffect(() => {
 
   return (
     <>
+      <Nav/>
       <div className="slider-content">
         <marquee >Welcome to our online shop! Hurry up and grab the best deals! 20% off on all products!</marquee>
       </div>
