@@ -3,13 +3,36 @@
     margin:0;
 }
 
+.heading{
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1{
+    font-size:2em;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading h3{
+    font-size: 1em;
+    color:rgb(95, 94, 94);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .main-container{
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background: linear-gradient(4deg, #eee9e9, #a7afca);
+    
 }
 
 .container {
@@ -22,6 +45,10 @@
     margin-top: 30px;
 }
 
+.form-box h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
 
 .form-box {
     position: absolute;

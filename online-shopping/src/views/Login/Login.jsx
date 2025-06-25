@@ -6,11 +6,15 @@ const Login = () => {
   return (  
     <>
     <div className='main-container'>
+          <div className='heading'>
+            <h1><i class="ri-shopping-cart-fill"></i> Welcome to Cloth Store – Your Smart Shopping Partner</h1>
+            <h3>Login to explore trendy fashion and exclusive deals!</h3>
+          </div>
       <div className="container">
         <div className="form-box login">
           <form action="">
-            <h1>Login</h1>
-            
+            <h1> Cloth Store <i class="ri-shopping-cart-line"></i></h1>
+            <h2>Login <i class="ri-login-circle-line"></i></h2>
             <div className="input-box">
               <input type="text" placeholder='Email' />
                 <i className="ri-mail-ai-line"></i>
