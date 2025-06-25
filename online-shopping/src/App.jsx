@@ -7,9 +7,11 @@ import Signup from './views/Signup/Signup';
 const App = () => {
   return (
      <>
-     <Nav />
-     <Home /> 
-
+     {/* <Nav />
+     <Home />  */}
+      <Login />
+      <Signup />
+    
      </>
   )
 }

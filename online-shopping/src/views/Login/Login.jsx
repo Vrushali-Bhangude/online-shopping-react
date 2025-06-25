@@ -37,7 +37,7 @@ const Login = () => {
           </form>
         </div>
         <div className='img-container'>
-        <img src="./Online_Shopping.jpg" alt="" />
+        <img src="/src/assets/Login-Signup/Online_Shopping.jpg" alt="" />
         </div>
       </div>
     </div>
