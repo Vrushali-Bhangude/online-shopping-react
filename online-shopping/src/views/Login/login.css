@@ -3,13 +3,36 @@
     margin:0;
 }
 
+.heading{
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1{
+    font-size:2em;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading h3{
+    font-size: 1em;
+    color:rgb(95, 94, 94);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .main-container{
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background: linear-gradient(4deg, #eee9e9, #a7afca);
+    
 }
 
 .container {
@@ -22,6 +45,10 @@
     margin-top: 30px;
 }
 
+.form-box h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
 
 .form-box {
     position: absolute;
@@ -141,4 +168,61 @@ form{
     text-decoration: none;
     margin: 0  8px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    position: static;
+  }
+
+  .form-box {
+    width: 100%;
+    position: static;
+    height: auto;
+    padding: 10px;
+  }
+
+  .img-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .heading h1 {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .heading h3 {
+    font-size: 0.9em;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icons a {
+    margin: 8px;
+  }
+  
+}
+
 
