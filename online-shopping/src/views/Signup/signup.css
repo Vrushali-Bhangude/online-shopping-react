@@ -13,19 +13,6 @@
   object-fit: fill;
 }
 
-.header2{
-  height:10vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: rgba(245, 245, 245, 0.685);
-  font-size: 1.3em;
-  margin-top:2px;
-  letter-spacing:px;
-}
-
 .main-container-page{
   height: 90vh;
   width: 40vw;
@@ -36,7 +23,7 @@
 .signup-container {
   height: 80vh;
   width: 30vw;
-  margin-top: 0px;
+  margin-top: 30px;
    /* background: rgba(199, 196, 196, 0.39);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -49,6 +36,7 @@
   align-items:center ;
   display: flex;
   justify-content: center;
+  font-size: 3em;
 }
 
 form i{
@@ -60,11 +48,14 @@ form i{
   display: flex;
   justify-content: center;
   margin-top: 2px;
+  color: hsl(0, 0%, 100%);
+
 }
 
 .login-msg a{
   text-decoration: none;
   margin-left: 6px;
+  color: #f5f8f8;
 }
 
 .signup-container h2{
@@ -72,6 +63,7 @@ form i{
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  font-size: 1.7em;
 }
 
 .icons {
@@ -97,5 +89,72 @@ form i{
   display: flex;
   justify-content: center;
   margin-top: 15px;
+  color: white;
 } 
+
+@media (max-width: 1024px) {
+  .background-image {
+    padding: 15px;
+    object-fit: cover;
+    
+  }
+
+  .main-container-page {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .signup-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .signup-container h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .signup-container h2 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .input-box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .input-box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  .login-msg {
+    font-size: 0.95em;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .icons a {
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .signup-container p {
+    font-size: 1em;
+    text-align: center;
+  }
+}
 
