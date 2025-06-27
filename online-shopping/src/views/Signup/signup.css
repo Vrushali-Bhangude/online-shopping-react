@@ -158,3 +158,25 @@ form i{
   }
 }
 
+.message-box {
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  width: 30vw;
+}
+
+.message-box.success {
+  background-color: #6df18c;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.message-box.error {
+  background-color:rgb(219, 214, 214);
+  color:rgb(34, 33, 33);
+  border-radius: 12px;
+}
