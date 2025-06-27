@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import 'remixicon/fonts/remixicon.css'
-import './login.css'
+import "./login.css"
 
 const Login = () => {
   // State variables for user input

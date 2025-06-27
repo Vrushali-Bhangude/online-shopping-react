@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./Home.css";
 import main from "../../assets/home-page/main.png";
 import Nav from "../../components/Navbar/Nav"
+import Footer from '../../components/Footer/Footer';
 
 
 const Home = () => {
@@ -58,6 +59,7 @@ useEffect(() => {
               </div>
              
        </div>
+       <Footer/>
     </>
   )
 }
