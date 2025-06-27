@@ -9,6 +9,9 @@ const Signup = () => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [message, setMessage] = useState('');
+  const [messageType, setMessageType] = useState('');
+
   const navigate = useNavigate();
 
   // ✅ Password validation: 
@@ -24,7 +27,8 @@ const Signup = () => {
 
     if (!isPasswordValid(password)) {           // Validate password
       // If the password is not valid, show an alert and return
-      alert('The password must be at least 6 characters long and contain only letters or numbers.');
+      setMessage('The password must be at least 6 characters long and contain only letters or numbers.');
+      setMessageType('error');
       return;
     }
 
@@ -37,17 +41,19 @@ const Signup = () => {
     const storedUsers = JSON.parse(localStorage.getItem('users')) || [];     // Retrieve existing users from localStorage or initialize an empty array
     const userExists = storedUsers.some((user) => user.email === email);     // Check if the user already exists based on the email
 
-    if (userExists) {      
-       // If the user already exists, show an alert and redirect to the login page
-      alert("You are already registered. Please log in.");  
-      navigate('/login');
+    if (userExists) {
+      // If the user already exists, show an alert and redirect to the login page
+      setMessage("You are already registered. Please log in.");
+      setMessageType('error');
+      setTimeout(() => navigate('/login'), 2000);
     } else {
       // If the user does not exist, add the new user to the stored users array
       // and save it back to localStorage
       storedUsers.push(newUser);
       localStorage.setItem('users', JSON.stringify(storedUsers));
-      alert("Signup successful.!");
-      navigate('/login');
+      setMessage("Signup successful.!");
+      setMessageType('success');
+      setTimeout(() => navigate('/login'), 2000);
     }
   };
 
@@ -56,6 +62,12 @@ const Signup = () => {
     <>
 
       <div className='background-image'>
+        {/* Message Box  */}
+        {message && (
+          <div className={`message-box ${messageType}`}>
+            {message}
+          </div>
+        )}
         <div className='main-container-page'>
           <div className='signup-container'>
             <form onSubmit={handleSubmit}>

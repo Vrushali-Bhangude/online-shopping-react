@@ -8,6 +8,9 @@ const Login = () => {
   // State variables for user input
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+   const [message, setMessage] = useState('');
+    const [messageType, setMessageType] = useState('');
+
   const navigate = useNavigate();
 
   const handleLogin = (e) => {   // Handle login form submission
@@ -21,16 +24,24 @@ const Login = () => {
     );
 
     if (matchedUser) {       // If a matching user is found, login is successful
-      alert('Login successful.Welcome to Cloth Store!');
-      navigate('/'); // Redirect to home page after successful login
+       setMessage('Login successful.Welcome to Cloth Store!');
+        setMessageType('success');
+      setTimeout(() => navigate('/'), 2000);
     } else {
-      alert("Incorrect email or password. Please try again.");
+       setMessage("Incorrect email or password. Please try again.");
+       setMessageType('error');
     }
   };
 
   return (
     <>
       <div className='main-container'>
+         {  /* Message Box  */}
+        {message && (
+          <div className={`message-box ${messageType}`}>
+            {message}
+          </div>
+        )}
         <div className='heading'>
           <h1><i className="ri-shopping-cart-fill"></i> Welcome to Cloth Store – Your Smart Shopping Partner</h1>
           <h3>Login to explore trendy fashion and exclusive deals!</h3>
