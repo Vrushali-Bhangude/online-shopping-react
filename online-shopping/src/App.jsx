@@ -1,9 +1,11 @@
 import React from 'react'
+import Kids from "./views/Kids/Kids";
+
 
 const App = () => {
   return (
     <div>
-      <h1>app</h1>
+      <Kids/>
     </div>
   )
 }
