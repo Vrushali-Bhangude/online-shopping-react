@@ -1,7 +1,8 @@
 import React from 'react';
 import './Kids.css';
-
-const kidsProducts = [
+import Nav from '../../components/Navbar/Nav';
+import Footer from '../../components/Footer/Footer';
+// Sample data for kids products
  const kidsProducts = [
   {
     id: 1,
@@ -53,7 +54,7 @@ const kidsProducts = [
   }
 ];
 
-];
+
 
 function Kids() {
   const handleAddToCart = (product) => {
@@ -61,7 +62,10 @@ function Kids() {
   };
 
   return (
-    <section className="kids-section">
+    
+   <>
+     <Nav/>
+      <section className="kids-section">
       <h2>🧒 Kids Section</h2>
       <div className="kids-grid">
         {kidsProducts.map((product) => (
@@ -74,6 +78,10 @@ function Kids() {
         ))}
       </div>
     </section>
+
+
+     <Footer/>
+     </>
   );
 }
 
