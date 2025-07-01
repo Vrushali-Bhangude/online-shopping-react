@@ -99,8 +99,7 @@ const Signup = () => {
               <div className="icons">
                 <a href="#"><i className="ri-google-fill"></i></a>
                 <a href="#"><i className="ri-facebook-circle-fill"></i></a>
-                <a href="#"><i className="ri-github-fill"></i></a>
-                <a href="#"><i className="ri-linkedin-box-fill"></i></a>
+              
               </div>
             </form>
           </div>
