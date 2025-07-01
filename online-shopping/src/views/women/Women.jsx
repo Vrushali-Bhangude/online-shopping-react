@@ -90,8 +90,6 @@ const Women = () => {
              < Womenproduct key={item.id} Product={item} />
                 </Link>
              ))}
-              
-             
            </div>
       </div>
      <Footer/>

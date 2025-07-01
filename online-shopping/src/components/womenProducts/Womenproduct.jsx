@@ -10,8 +10,6 @@ const Womenproduct = ({ Product }) => {
   return (
            <>
                <div className='product-stock' >
-
-                     
                         <img src={Product?.image || Product.thumbnail } alt={ Product?.title || Product.name} className='women-product-img' />
                       
                        <div className='women-product-info'>
@@ -19,10 +17,7 @@ const Womenproduct = ({ Product }) => {
                         <span className='price'>
                            <b> Price :</b> { Product?.price}
                         </span>
-
                         <span><b>Rating:</b> {Product?.rating?.rate || Product.rating}</span>
-                    
-  
                          <button className='product-btn' onClick={handleBuyNow}>buy now</button>
                        </div>
                        
