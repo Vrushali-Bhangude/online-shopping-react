@@ -12,7 +12,7 @@ const MainSection = ({img}) => {
                     <button className='hero-btn'onClick={()=>{alert("Order Placed Successfully!")}}>Shop Now</button>
                 </div>
                 <div className="hero-img">
-                     <img src={img} alt="main image"/>
+                     <img src={img} alt="main image" className="hero-image"/>
                 </div>
          </div>
     </>
